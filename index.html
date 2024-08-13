@@ -15,6 +15,7 @@
         h1 {
             text-align: center;
             margin-bottom: 20px;
+            color: #223E69;
         }
 
         table {
@@ -38,22 +39,40 @@
             background-color: #f1f1f1;
         }
 
-        .btn-edit {
-            background-color: #223E69;
-            color: white;
-            padding: 8px 16px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 14px;
-            margin: 4px 2px;
-            cursor: pointer;
-            border: none;
-            border-radius: 4px;
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
         }
 
-        .btn-edit:hover {
-            background-color: #223E69;
+        @media (max-width: 600px) {
+            table, th, td {
+                display: block;
+                width: 100%;
+            }
+
+            tr {
+                margin-bottom: 15px;
+                border-bottom: 2px solid #223E69;
+            }
+
+            th, td {
+                text-align: right;
+                padding: 10px 15px;
+            }
+
+            th {
+                background-color: transparent;
+                color: #223E69;
+                text-align: left;
+                font-weight: bold;
+            }
+
+            td::before {
+                content: attr(data-label);
+                float: left;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: #223E69;
+            }
         }
     </style>
 </head>
@@ -68,24 +87,25 @@
             <th>Información Extra</th>
         </tr>
         <tr>
-            <td>Matemáticas Avanzadas</td>
-            <td>15 de agosto, 10:00 AM</td>
-            <td>15 de agosto, 12:00 PM</td>
-            <td>El examen incluye todos los temas del semestre.</td>
+            <td data-label="Asignatura">Matemáticas Avanzadas</td>
+            <td data-label="Disponible desde">15 de agosto, 10:00 AM</td>
+            <td data-label="Disponible hasta">15 de agosto, 12:00 PM</td>
+            <td data-label="Información Extra">El examen incluye todos los temas del semestre.</td>
         </tr>
         <tr>
-            <td>Historia Moderna</td>
-            <td>17 de agosto, 2:00 PM</td>
-            <td>17 de agosto, 4:00 PM</td>
-            <td>Preguntas de ensayo y opción múltiple.</td>
+            <td data-label="Asignatura">Historia Moderna</td>
+            <td data-label="Disponible desde">17 de agosto, 2:00 PM</td>
+            <td data-label="Disponible hasta">17 de agosto, 4:00 PM</td>
+            <td data-label="Información Extra">Preguntas de ensayo y opción múltiple.</td>
         </tr>
         <tr>
-            <td>Biología General</td>
-            <td>20 de agosto, 9:00 AM</td>
-            <td>20 de agosto, 11:00 AM</td>
-            <td>No se permite material de apoyo.</td>
+            <td data-label="Asignatura">Biología General</td>
+            <td data-label="Disponible desde">20 de agosto, 9:00 AM</td>
+            <td data-label="Disponible hasta">20 de agosto, 11:00 AM</td>
+            <td data-label="Información Extra">No se permite material de apoyo.</td>
         </tr>
     </table>
-
 </body>
 </html>
+
+
