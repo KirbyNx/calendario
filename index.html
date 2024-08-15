@@ -3,19 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo_esit.png" type="image/x-icon">
     <title>Calendario de Exámenes</title>
     <style>
-        a img {
+        #examen {
+            display: block;
+            margin-left: 40px;
             vertical-align: middle;
-        }
-        
-        a {
             display: flex;
             justify-content: center;
-        }
-
-        a img {
-            vertical-align: middle;
         }
 
         body {
@@ -104,7 +100,7 @@
             td:last-child {
                 padding-bottom: 20px;
             }
-        }
+        }    
     </style>
 </head>
 <body>
@@ -129,7 +125,7 @@
                 <td data-label="Disponible hasta">18 de agosto</td>
                 <td data-label="Intentar examen">
                     <a href="https://aula.esit.gob.sv/mod/quiz/view.php?id=4825">
-                      <img src="Icono_de_evaluacion.png" alt="Realizar Examen" width="45" height="45" style="vertical-align: middle;">
+                      <img src="Icono_de_evaluacion.png" alt="Realizar Examen" width="45" height="45" style="vertical-align: middle;" id="examen">
                     </a>
                 </td>
             </tr>
