@@ -57,13 +57,9 @@
                 display: block;
                 width: 100%;
             }
-            
+
             #examen {
-                display: block;
                 margin-left: 75px;
-                vertical-align: middle;
-                display: flex;
-                justify-content: center;
             }
 
             th, td {
@@ -80,7 +76,6 @@
                 border: 1px solid #ddd;
                 margin-bottom: 10px;
                 border-radius: 5px;
-                padding: 0px;
                 background-color: #fff;
             }
 
@@ -89,6 +84,18 @@
                 position: relative;
                 padding-left: 50%;
                 text-align: right;
+            }
+
+            #asi[data-label="Asignatura"] {
+                text-align: center;
+                color: #223E69;
+                font-size: 20px;
+                font-weight: bold;
+                padding-left: 0;
+            }
+
+            #asi[data-label="Asignatura"]::before {
+                content: none;
             }
 
             td::before {
@@ -129,7 +136,7 @@
         </thead>
         <tbody>
             <tr>
-                <td data-label="Asignatura">Gestión de Servicios de Tecnología de Información</td>
+                <td id="asi" data-label="Asignatura">Gestión de Servicios de Tecnología de Información</td>
                 <td data-label="Nombre">Control de lectura 3.2- UD3 GSTI. No evaluado</td>
                 <td data-label="Disponible desde">15 de agosto</td>
                 <td data-label="Disponible hasta">Sin fecha de cierre</td>
@@ -140,7 +147,7 @@
                 </td>
             </tr>
             <tr>
-                <td data-label="Asignatura">Bases de Datos</td>
+                <td id="asi" data-label="Asignatura">Bases de Datos</td>
                 <td data-label="Nombre">Examen 1 - UD3</td>
                 <td data-label="Disponible desde">23 de agosto</td>
                 <td data-label="Disponible hasta">25 de agosto</td>
@@ -151,7 +158,7 @@
                 </td>
             </tr>
             <tr>
-                <td data-label="Asignatura">Gestión de Servicios de Tecnología de Información</td>
+                <td id="asi" data-label="Asignatura">Gestión de Servicios de Tecnología de Información</td>
                 <td data-label="Nombre">Examen UD3</td>
                 <td data-label="Disponible desde">29 de agosto</td>
                 <td data-label="Disponible hasta">31 de agosto</td>
@@ -160,28 +167,27 @@
                       <img src="Icono_de_evaluacion.png" alt="Realizar Examen" width="45" height="45" style="vertical-align: middle;" id="examen">
                     </a>
                 </td>
-                <tr>
-                    <td data-label="Asignatura">Estructura de Datos</td>
-                    <td data-label="Nombre">Examen 1 - UD4</td>
-                    <td data-label="Disponible desde">29 de Agosto</td>
-                    <td data-label="Disponible hasta">1 de Septiembre</td>
-                    <td data-label="Intentar examen">Aún no disponible</td>
-                </tr>
-                <tr>
-                    <td data-label="Asignatura">Sistemas operativos</td>
-                    <td data-label="Nombre">Examen 1 - UD3</td>
-                    <td data-label="Disponible desde">30 de Agosto</td>
-                    <td data-label="Disponible hasta">1 de Septiembre</td>
-                    <td data-label="Intentar examen">Aún no disponible</td>
-                </tr>
-                <tr>
-                    <td data-label="Asignatura">Fundamentos de Programación</td>
-                    <td data-label="Nombre">Examen UD4</td>
-                    <td data-label="Disponible desde">2 de Septiembre</td>
-                    <td data-label="Disponible hasta">9 de Septiembre</td>
-                    <td data-label="Intentar examen">Aún no disponible</td>
-                    </td>
-                </tr>
+            </tr>
+            <tr>
+                <td id="asi" data-label="Asignatura">Estructura de Datos</td>
+                <td data-label="Nombre">Examen 1 - UD4</td>
+                <td data-label="Disponible desde">29 de Agosto</td>
+                <td data-label="Disponible hasta">1 de Septiembre</td>
+                <td data-label="Intentar examen">Aún no disponible</td>
+            </tr>
+            <tr>
+                <td id="asi" data-label="Asignatura">Sistemas operativos</td>
+                <td data-label="Nombre">Examen 1 - UD3</td>
+                <td data-label="Disponible desde">30 de Agosto</td>
+                <td data-label="Disponible hasta">1 de Septiembre</td>
+                <td data-label="Intentar examen">Aún no disponible</td>
+            </tr>
+            <tr>
+                <td id="asi" data-label="Asignatura">Fundamentos de Programación</td>
+                <td data-label="Nombre">Examen UD4</td>
+                <td data-label="Disponible desde">2 de Septiembre</td>
+                <td data-label="Disponible hasta">9 de Septiembre</td>
+                <td data-label="Intentar examen">Aún no disponible</td>
             </tr>
         </tbody>
     </table>
@@ -197,49 +203,48 @@
         </thead>
         <tbody>
             <tr>
-                <td data-label="Asignatura">Fundamentos de Programación</td>
+                <td id="asi" data-label="Asignatura">Fundamentos de Programación</td>
                 <td data-label="Nombre">Examen UD3</td>
                 <td data-label="Disponible desde">16 de agosto</td>
                 <td data-label="Disponible hasta">19 de agosto</td>
-                </td>
             </tr>
             <tr>
-                <td data-label="Asignatura">Fundamentos de Redes</td>
+                <td id="asi" data-label="Asignatura">Fundamentos de Redes</td>
                 <td data-label="Nombre">Examen 1 - UD2</td>
                 <td data-label="Disponible desde">16 de agosto</td>
                 <td data-label="Disponible hasta">18 de agosto</td>
             </tr>
             <tr>
-                <td data-label="Asignatura">Sistemas Operativos</td>
+                <td id="asi" data-label="Asignatura">Sistemas Operativos</td>
                 <td data-label="Nombre">Examen 1 - UD3</td>
                 <td data-label="Disponible desde">16 de agosto</td>
                 <td data-label="Disponible hasta">18 de agosto</td>
             </tr>
             <tr>
-                <td data-label="Asignatura">Bases de Datos</td>
+                <td id="asi" data-label="Asignatura">Bases de Datos</td>
                 <td data-label="Nombre">Examen 1 - UD3</td>
                 <td data-label="Disponible desde">16 de agosto</td>
                 <td data-label="Disponible hasta">18 de agosto</td>
             </tr>
             <tr>
-                <td data-label="Asignatura">Sistemas operativos</td>
+                <td id="asi" data-label="Asignatura">Sistemas operativos</td>
                 <td data-label="Nombre">Examen 2 - UD2</td>
                 <td data-label="Disponible desde">9 de Agosto</td>
                 <td data-label="Disponible hasta">11 de Agosto</td>
             </tr>
             <tr>
-                <td data-label="Asignatura">Estructura de Datos</td>
+                <td id="asi" data-label="Asignatura">Estructura de Datos</td>
                 <td data-label="Nombre">Examen 1 - UD3</td>
                 <td data-label="Disponible desde">9 de Agosto</td>
                 <td data-label="Disponible hasta">11 de Agosto</td>
             </tr>
             <tr>
-                <td data-label="Asignatura">Bases de Datos</td>
+                <td id="asi" data-label="Asignatura">Bases de Datos</td>
                 <td data-label="Nombre">Examen 2 - UD2</td>
                 <td data-label="Disponible desde">9 de Agosto</td>
                 <td data-label="Disponible hasta">11 de Agosto</td>
             </tr>
-            </tbody>
+        </tbody>
     </table>
 </body>
 </html>
